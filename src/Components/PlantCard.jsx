@@ -2,12 +2,12 @@ import React from "react";
 
 function PlantCard({ title, description, bgImage, cornerIcon }) {
   return (
-    <div className="w-[220px] h-[320px] bg-white rounded-[20px] shadow-lg overflow-hidden text-center flex flex-col">
+    <div className="w-[90%] max-w-[270px] h-auto bg-white rounded-2xl shadow-lg overflow-hidden text-center flex flex-col mx-auto sm:w-[45%] md:w-[270px]">
       {/* Curved background image area */}
-      <div className="relative w-full h-[100%]">
+      <div className="relative w-full h-[150px]">
         <svg
           viewBox="0 0 220 160"
-          className="absolute top-0 left-0 w-full h-[150px]"
+          className="absolute top-0 left-0 w-full h-full"
           preserveAspectRatio="none"
         >
           <defs>
@@ -30,13 +30,15 @@ function PlantCard({ title, description, bgImage, cornerIcon }) {
         </div>
       </div>
 
-      {/* Content section with tighter vertical spacing */}
-      <div className="flex flex-col items-center justify-between flex-grow px-4 gap-6">
-        <h2 className="text-md font-bold text-gray-800">{title}</h2>
-        <p className="text-xs text-gray-600 mt-1  leading-tight">
+      {/* Content section */}
+      <div className="flex flex-col items-center justify-between px-4 pt-4 pb-3 flex-grow gap-4">
+        <h2 className="text-md md:text-md font-bold text-gray-800 font-poppins">
+          {title}
+        </h2>
+        <p className="text-xs md:text-sm text-gray-600 font-poppins leading-tight">
           {description}
         </p>
-        <button className="bg-[#2d6a4f] hover:bg-green-600 text-white text-xs font-semibold px-5 py-2 rounded-full transition duration-200 mb-3">
+        <button className="bg-[#2d6a4f] hover:bg-green-600 text-white text-xs md:text-sm  font-poppins cursor-pointer font-semibold px-5 py-2 rounded-lg transition duration-200">
           View More
         </button>
       </div>

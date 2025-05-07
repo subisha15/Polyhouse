@@ -22,7 +22,7 @@ function PlantCardContainer() {
         "Automate temperature, humidity, and irrigation systems to ensure ideal growing conditions.",
     },
     {
-      title: "Crop Consultation & Support Services",
+      title: "Crop Consultation  Services",
       imageSrc: plant1,
       description:
         "Get expert advice, crop planning, and support  to maximize productivity.",
@@ -41,8 +41,8 @@ function PlantCardContainer() {
       style={{ backgroundImage: `url(${bg})` }}
     >
       <div className="flex flex-col items-center justify-center gap-2">
-        <p className="text-xl text-gray-700 mb-2">We provide</p>
-        <h1 className="text-2xl sm:text-5xl md:text-4xl font-bold text-center sm:mb-5 lg:mb-10">
+        <p className="text-4xl text-black mb-2 font-pacifico">We Provide</p>
+        <h1 className="text-2xl sm:text-5xl md:text-4xl font-bold text-center text-green-500 sm:mb-5 lg:mb-10">
           Best Polyhouse Services <br />
           In India
         </h1>

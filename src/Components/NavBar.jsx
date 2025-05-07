@@ -3,18 +3,19 @@ import Logo from "../assets/RatheeLogo.png";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { HiMenu, HiX } from "react-icons/hi";
+import { Link } from "react-router-dom";
 
 function NavBar() {
-  const [active, setActive] = useState("Home");
+  const [active, setActive] = useState("");
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const navItems = [
-    "Home",
-    "About",
-    "Contact",
-    "Our Services",
-    "Gallery",
-    "Videos",
+    { name: "Home", path: "/" },
+    { name: "About", path: "/about" },
+    { name: "Contact", path: "/contact" },
+    { name: "Our Services", path: "/services" },
+    { name: "Gallery", path: "/gallery" },
+    { name: "Videos", path: "/videos" },
   ];
 
   return (
@@ -34,13 +35,13 @@ function NavBar() {
           <ul className="hidden xl:flex items-center gap-6 font-semibold text-base">
             {navItems.map((item) => (
               <li
-                key={item}
-                onClick={() => setActive(item)}
+                key={item.name}
+                onClick={() => setActive(item.name)}
                 className={`cursor-pointer font-poppins transition-all px-2 ${
-                  active === item ? "border-b-2 border-green-600" : ""
+                  active === item.name ? "border-b-2 border-green-600" : ""
                 }`}
               >
-                {item}
+                <Link to={item.path}>{item.name}</Link>
               </li>
             ))}
           </ul>
@@ -73,16 +74,16 @@ function NavBar() {
         <ul className="xl:hidden flex flex-col bg-white shadow-md px-6 py-4 space-y-3">
           {navItems.map((item) => (
             <li
-              key={item}
+              key={item.name}
               onClick={() => {
-                setActive(item);
+                setActive(item.name);
                 setIsMobileMenuOpen(false);
               }}
               className={`cursor-pointer font-poppins transition-all ${
-                active === item ? "border-b-2 border-green-600" : ""
+                active === item.name ? "border-b-2 border-green-600" : ""
               }`}
             >
-              {item}
+              <Link to={item.path}>{item.name}</Link>
             </li>
           ))}
         </ul>

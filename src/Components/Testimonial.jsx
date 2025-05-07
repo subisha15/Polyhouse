@@ -53,12 +53,9 @@ function Testimonial() {
     <div className="bg-white py-16 px-6 text-black">
       {/* Section Title */}
       <div className="text-center mb-12">
-        <h2 className="text-4xl font-bold">
+        <h2 className="text-4xl text-black mb-2 font-pacifico">
           What Our <span className="text-[#2d6a4f]">Clients Say</span>
         </h2>
-        <p className="mt-2 text-gray-600 text-sm">
-          Honest feedback from those who trust us
-        </p>
       </div>
 
       {/* Swiper Carousel */}
@@ -96,7 +93,7 @@ function Testimonial() {
 
         {/* CTA Button */}
         <div className="text-center mt-10">
-          <button className="bg-[#2d6a4f] text-white px-6 py-3 rounded-full font-semibold hover:bg-red-600 transition">
+          <button className="bg-[#2d6a4f] text-white px-6 py-3 rounded-lg font-semibold hover:bg-red-600 transition">
             Learn More
           </button>
         </div>

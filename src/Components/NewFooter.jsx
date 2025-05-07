@@ -21,13 +21,13 @@ const NewFooter = () => {
           <div className="flex  gap-3">
             {" "}
             <FaPhoneAlt className="text-white text-xl" />
-            <span className="font-poppins font-medium"> +966 920005269</span>
+            <span className="font-poppins font-medium"> +91 9992117565</span>
           </div>
           <div className="flex  gap-3">
             {" "}
             <MdEmail className="text-white text-xl" />
             <span className="font-poppins font-medium">
-              Street 7239 AlUla 43512
+              info@ratheegreenhouse.com
             </span>
           </div>
         </div>

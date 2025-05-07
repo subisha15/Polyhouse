@@ -1,19 +1,51 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Stylish&display=swap");
+
 @import "tailwindcss";
 
 @theme {
   --font-poppins: "Poppins", sans-serif;
 }
+@theme {
+  --font-pacifico: "Pacifico", sans-serif;
+}
+
 @keyframes slideInfinite {
-  0% {
-    transform: translateX(0);
+  0%,
+  20% {
+    transform: translateX(0); /* Banner 1 stays */
+  }
+  33.33%,
+  53.33% {
+    transform: translateX(-1550px); /* Banner 2 stays */
+  }
+  66.66%,
+  86.66% {
+    transform: translateX(-3100px); /* Banner 3 stays */
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(0); /* Back to first banner */
   }
 }
 
 .animate-slideInfinite {
-  animation: slideInfinite 30s linear infinite;
+  animation: slideInfinite 10s ease-in-out infinite;
+}
+
+@keyframes blob-bounce {
+  0% {
+    transform: translate(-100%, -100%) translate3d(0, 0, 0);
+  }
+  25% {
+    transform: translate(-100%, -100%) translate3d(100%, 0, 0);
+  }
+  50% {
+    transform: translate(-100%, -100%) translate3d(100%, 100%, 0);
+  }
+  75% {
+    transform: translate(-100%, -100%) translate3d(0, 100%, 0);
+  }
+  100% {
+    transform: translate(-100%, -100%) translate3d(0, 0, 0);
+  }
 }

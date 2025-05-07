@@ -11,6 +11,7 @@ import Banner from "./Banner";
 import FAQ from "./FAQ";
 import NavBar from "./NavBar";
 import Testimonial from "./Testimonial";
+import BackToTop from "./BackToTop";
 
 function MainHome() {
   return (
@@ -18,12 +19,14 @@ function MainHome() {
       <TopNavbar />
       <NavBar />
       <Banner />
+
       <AboutSection />
       <PlantCardContainer />
       <Testimonial />
       <PolyhouseStats />
       <FAQ />
       <NewFooter />
+      <BackToTop />
     </div>
   );
 }

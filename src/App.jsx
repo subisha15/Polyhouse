@@ -10,16 +10,24 @@ import FAQ from "./Components/FAQ";
 import NewNav from "./Components/NavBar";
 import NavBar from "./Components/NavBar";
 import Testimonial from "./Components/Testimonial";
+import AboutPart from "./Components/About/AboutPart";
+import AboutMain from "./Components/About/AboutMain";
+import Vision from "./Components/About/Vision";
+import TeamCard from "./Components/About/TeamCard";
+import FeaturesSection from "./Components/Services/FeatureSection";
+import ServicesMain from "./Components/Services/ServicesMain";
+
+import ContactMain from "./Components/ContactUs/ContactMain";
 
 function App() {
   return (
     <div>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<PlantCardContainer />} />/
-          <Route path="/home" element={<MainHome />} />/
-          <Route path="/footer" element={<NewFooter />} />/
-          <Route path="/sample" element={<Testimonial />} />/
+          <Route path="/" element={<MainHome />} />/
+          <Route path="/about" element={<AboutMain />} />/
+          <Route path="/services" element={<ServicesMain />} />
+          <Route path="/sample" element={<ContactMain />} />/
         </Routes>
       </BrowserRouter>
     </div>

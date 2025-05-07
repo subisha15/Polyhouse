@@ -1,5 +1,5 @@
 import { useState } from "react";
-import image from "../assets/faq.png";
+import image from "../assets/FAQ_bg.png";
 
 function FAQ() {
   const faqData = [
@@ -35,9 +35,9 @@ function FAQ() {
   };
 
   return (
-    <div className="relative bg-white">
+    <div className="relative bg-white ">
       {/* Main FAQ Section */}
-      <div className="flex flex-col lg:flex-row items-start justify-center p-10 gap-10">
+      <div className="flex flex-col lg:flex-row items-start justify-center p-12 gap-10 ">
         {/* Left Image */}
         <div className="w-full lg:w-1/3 flex justify-center">
           <img
@@ -49,7 +49,7 @@ function FAQ() {
 
         {/* Right FAQ Section */}
         <div className="w-full lg:w-3/4">
-          <h2 className="text-3xl font-bold mb-6">
+          <h2 className="text-4xl text-black mb-2 font-pacifico">
             Frequently Asked Questions
           </h2>
           <div className="space-y-4">
@@ -74,7 +74,7 @@ function FAQ() {
       </div>
 
       {/* Wavy Bottom */}
-      <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
+      <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none ">
         <svg
           viewBox="0 0 500 150"
           preserveAspectRatio="none"
