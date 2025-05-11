@@ -1,5 +1,5 @@
 import { useState } from "react";
-import image from "../assets/FAQ_bg.png";
+import image from "../assets/faq.png";
 
 function FAQ() {
   const faqData = [
@@ -43,7 +43,7 @@ function FAQ() {
           <img
             src={image}
             alt="Polyhouse Farming"
-            className="rounded-lg w-full max-w-md shadow-lg rotate-[-3deg]"
+            className="rounded-lg w-full max-w-md rotate-[-3deg]"
           />
         </div>
 

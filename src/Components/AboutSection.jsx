@@ -1,6 +1,7 @@
 import React from "react";
 import Img from "../assets/poly_vector.png";
 import founder from "../assets/founder.png";
+//import grass from "../assets/grass.png";
 
 function AboutSection() {
   return (
@@ -32,10 +33,18 @@ function AboutSection() {
             <br />
             <span className="text-green-600">With PolyAgrotech </span>
           </h2>
-          <p className="text-sm sm:text-base md:text-md text-gray-800 font-semibold  mt-2 mb-6">
-            Our poly greenhouses offer a controlled environment that protects
-            crops from harsh weather, enabling sustainable and high-yield
-            farming all year round.
+          <p className="text-sm sm:text-base md:text-md text-gray-800 font-semibold  text-justify mt-2 mb-6">
+            At Rathee Agrotech, we are passionate about sustainable agriculture
+            and innovative farming practices. Our polyhouse facility is designed
+            to provide optimal growing conditions for a variety of high-quality
+            crops throughout the year. By using advanced technology and climate
+            control systems, we ensure consistent yield, water efficiency, and
+            minimal environmental impact. Our dedicated team of agricultural
+            experts and skilled workers is committed to producing fresh,
+            healthy, and pesticide-free vegetables and flowers for local markets
+            and beyond. We believe in empowering farmers, promoting green
+            practices, and delivering farm-fresh produce straight from our
+            polyhouse to your home.
           </p>
 
           {/* Founder Words */}
@@ -49,7 +58,7 @@ function AboutSection() {
               <h4 className="text-base sm:text-md font-bold">
                 Few Words From Our Founder
               </h4>
-              <p className="text-sm text-black font-semibold">
+              <p className="text-sm text-gray-600 font-semibold text-justify">
                 Lorem ipsum dolor sit amet consectetur. Egestas eget vulputate
                 sit nunc. Quisque ultricies pulvinar nibh eros non commodo
                 aenean vitae. Lorem vitae dictumst turpis dui massa.
@@ -58,7 +67,7 @@ function AboutSection() {
           </div>
 
           <button className="bg-[#2d6a4f] hover:bg-green-700 text-white px-6 py-3 rounded-md text-sm font-semibold">
-            Learn More
+            Get Quote
           </button>
         </div>
 

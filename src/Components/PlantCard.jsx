@@ -2,7 +2,7 @@ import React from "react";
 
 function PlantCard({ title, description, bgImage, cornerIcon }) {
   return (
-    <div className="w-[90%] max-w-[270px] h-auto bg-white rounded-2xl shadow-lg overflow-hidden text-center flex flex-col mx-auto sm:w-[45%] md:w-[270px]">
+    <div className="w-[325px] h-auto border-2 border-gray-200 bg-white rounded-2xl shadow-lg overflow-hidden text-center flex flex-col mx-auto">
       {/* Curved background image area */}
       <div className="relative w-full h-[150px]">
         <svg

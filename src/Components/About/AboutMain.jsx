@@ -6,6 +6,7 @@ import NewFooter from "../NewFooter";
 import Vision from "./Vision";
 import TeamCard from "./TeamCard";
 import BackToTop from "../BackToTop";
+import MissionVision from "./MissionVision";
 
 function AboutMain() {
   return (
@@ -13,7 +14,7 @@ function AboutMain() {
       <TopNavbar />
       <NavBar />
       <AboutPart />
-      <Vision />
+      <MissionVision />
       <TeamCard />
       <NewFooter />
       <BackToTop />

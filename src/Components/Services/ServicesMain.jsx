@@ -6,13 +6,15 @@ import BackToTop from "../BackToTop";
 import FeatureCard from "./FeatureCard";
 import FeaturesSection from "./FeatureSection";
 import Testimonial from "../Testimonial";
+import ServicePart from "./ServicePart";
+import ServiceContainer from "./ServiceContainer";
 
 function ServicesMain() {
   return (
     <div>
       <TopNavbar />
       <NavBar />
-      <FeaturesSection />
+      <ServiceContainer />
 
       <NewFooter />
       <BackToTop />

@@ -12,12 +12,17 @@ import NavBar from "./Components/NavBar";
 import Testimonial from "./Components/Testimonial";
 import AboutPart from "./Components/About/AboutPart";
 import AboutMain from "./Components/About/AboutMain";
-import Vision from "./Components/About/Vision";
-import TeamCard from "./Components/About/TeamCard";
+
 import FeaturesSection from "./Components/Services/FeatureSection";
 import ServicesMain from "./Components/Services/ServicesMain";
 
 import ContactMain from "./Components/ContactUs/ContactMain";
+import MissionVision from "./Components/About/MissionVision";
+
+import GalleryMain from "./Components/Gallery/GalleryMain";
+import Blog from "./Components/Gallery/Blog";
+import VideoMain from "./Components/Gallery/VideoMain";
+import ServiceContainer from "./Components/Services/ServiceContainer";
 
 function App() {
   return (
@@ -26,8 +31,11 @@ function App() {
         <Routes>
           <Route path="/" element={<MainHome />} />/
           <Route path="/about" element={<AboutMain />} />/
+          <Route path="/contact" element={<ContactMain />} />
           <Route path="/services" element={<ServicesMain />} />
-          <Route path="/sample" element={<ContactMain />} />/
+          <Route path="/gallery" element={<GalleryMain />} />
+          <Route path="/videos" element={<VideoMain />} />
+          <Route path="/sample" element={<ServiceContainer />} />/
         </Routes>
       </BrowserRouter>
     </div>
